@@ -3,6 +3,7 @@ from datetime import date
 
 
 class Category(models.Model):
+    objects = None
     name = models.CharField(verbose_name="Категория", max_length=50, unique=True)
 
     def __str__(self):

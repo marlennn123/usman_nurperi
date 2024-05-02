@@ -5,46 +5,46 @@ from .models import *
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = 'all'
+        fields = '__all__'
 
 
 class ActorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actor
-        fields = 'all'
+        fields = '__all__'
 
 
 class DirectorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Director
-        fields = 'all'
+        fields = '__all__'
 
 
-class GenreSerilizer(serializers.ModelSerializer):
+class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = 'all'
+        fields = '__all__'
 
 
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = 'all'
+        fields = '__all__'
 
 
 class MovieShotsSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieShots
-        fields = 'all'
+        fields = '__all__'
 
 
 class GoodSerializer(serializers.ModelSerializer):
     class Meta:
         model = Good
-        fields = 'all'
+        fields = '__all__'
 
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = 'all'
+        fields = '__all__'
