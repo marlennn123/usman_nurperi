@@ -31,6 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,8 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'kino_site',
     'rest_framework',
-    'allauth',
-    'allauth.account',
+
 ]
 
 MIDDLEWARE = [
@@ -150,4 +155,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+SOCIALACCOUNT_PROVIDERS = {}
+
 
