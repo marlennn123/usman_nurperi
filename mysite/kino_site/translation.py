@@ -4,4 +4,4 @@ from modeltranslation.translator import TranslationOptions, register
 
 @register(Movie)
 class ProductTranslationOptions(TranslationOptions):
-    fields = ('title', 'tagline', 'description', 'poster', 'draft')
+    fields = ('title', 'tagline', 'description', )
