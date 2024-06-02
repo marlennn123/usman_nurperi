@@ -4,7 +4,7 @@ from .models import *
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 from .filters import MovieFilter
-from rest_framework.pagination import  PageNumberPagination
+from rest_framework.pagination import PageNumberPagination
 
 
 class MovieAPIListPagination(PageNumberPagination):
